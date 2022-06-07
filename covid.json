@@ -1,0 +1,19 @@
+{
+    "update": {
+        "penambahan" : {
+           "jumlah_positif": 372,
+           "jumlah_meninggal": 4,
+           "jumlah_sembuh": 350,
+           "jumlah_dirawat": 18,
+           "tanggal": "2022-06-03",
+           "created": "2022-06-03 16:07:59" 
+        },
+        "harian" : [],
+        "total" : {
+            "jumlah_positif": 6050882,
+            "jumlah_meninggal": 3123,
+            "jumlah_sembuh": 589002,
+            "jumlah_dirawat": 156772 
+        }
+    } 
+}
