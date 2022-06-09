@@ -1,5 +1,5 @@
 import express from 'express'
-import {storeData} from '../controllers/covidController.js'
+import {storeData} from '../controllers/covidController'
 
 const router: any = express.Router()
 
