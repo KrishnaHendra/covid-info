@@ -1,16 +1,14 @@
-import express, {Request, Response, Router} from 'express'
-import {dataCovid, storeData} from '../controllers/covidController.js'
+import express from 'express'
+import {storeData} from '../controllers/covidController.js'
 
-const router: Router = express.Router()
+const router: any = express.Router()
 
-router.get('/', async (req: Request, res: Response) => {
+router.get('/', async (req: any, res: any) => {
     const data: any = await storeData()
-    res.json({
-        msg: 'Fetch data Success!',
-        data
-    })
+    const msg: string = 'Fetch data success!'
+    res.json({ msg, data })
 })
 
-// router.post('/', storeData)
+router.post('/', storeData)
 
 export default router
