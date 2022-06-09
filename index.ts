@@ -1,10 +1,10 @@
-import express, { Express, Request, Response } from 'express';
+import express from 'express';
 import CronJob from 'node-cron'
 import { checkUpdate } from './src/controllers/covidController'
 import connectDB from './src/configs/db'
 import router from './src/routes/covidRoutes'
 
-const app: Express = express();
+const app: any = express();
 const port = 3000;
 
 connectDB()
