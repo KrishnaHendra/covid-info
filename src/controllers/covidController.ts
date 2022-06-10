@@ -10,6 +10,14 @@ export const dataCovid: any = async () => {
     return data
 }
 
+export const getData: any = async (req: any, res: any) => {
+    const data: any = await(storeData())
+    res.json({
+        msg: 'Fetch data success!',
+        data
+    })
+}
+
 export const storeData: any = async (logHistory: object = {}) => {
     let getFromApi: any = await dataCovid()
 
